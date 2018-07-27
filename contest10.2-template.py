@@ -153,7 +153,7 @@ def AI_text(mat, turn):
             score += third_row(mat)
             record_matrix_and_move(mat, move)
             if turn == 2:
-                #score += bonus
+                score += bonus
                 if history_matrix[-1][0][0] < history_matrix[-2][0][0]:
                     score -= biggest_tiles(mat)[0]*2
             else:
